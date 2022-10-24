@@ -1,5 +1,6 @@
 import dummmy from "./db/data.json"
 import { useParams } from "react-router-dom";
+import Word from "./Word";
 
 export default function Day() {
 
@@ -19,10 +20,7 @@ export default function Day() {
             <tbody>
                 {wordList.map(
                     word => (
-                        <tr key={word.id}>
-                            <td>{word.kor}</td>
-                            <td>{word.eng}</td>
-                        </tr>
+                        <Word word={word} key={word.id} />
                     )
                 )}
             </tbody>
