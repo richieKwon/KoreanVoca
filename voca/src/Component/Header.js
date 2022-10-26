@@ -7,8 +7,8 @@ export default function Header() {
                 <Link to="/">Today's vocabulary</Link>
             </h1>
             <div className="menu">
-                <a href="#x" className="link">Add vocabulary</a>
-                <a href="#x" className="link">Add Day</a>
+                <Link to="/create_word" className="link">Add vocabulary</Link>
+                <Link to="/create_day" className="link">Add Day</Link>
             </div>
 
         </div>
