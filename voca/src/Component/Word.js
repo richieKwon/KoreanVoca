@@ -52,4 +52,4 @@ export default function Word({ word: w }) {
             </td>
         </tr>
     );
-}
+}     

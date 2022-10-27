@@ -13,6 +13,7 @@ export default function DayList() {
     //         .then(data => { setDays(data) });
     // }, []);
 
+    if (days.length === 0) { <span>Loading...</span> }
 
     return <>
         <ul className="list_day">
